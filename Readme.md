@@ -386,9 +386,9 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más 
 
 
 
-Tu nombre - tu-email@example.com
+Tu nombre - shermidagre@danielcastelao.org
 
 
 
 
-Enlace al proyecto en GitHub: https://github.com/usuario/nombre-del-repo
+Enlace al proyecto en GitHub: https://github.com/shermidagre/ExamenCOD2av.git

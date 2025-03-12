@@ -140,6 +140,7 @@ Necesitaremos utilizar este rever para un commit echo por Damian en este determi
 
 3. **Confirmar el Revert**: Verifica que el commit ha sido revertido correctamente usando el comando `git log`.
 
+
 #### En caso de querer realizarlo por intuicion
 
 
@@ -150,6 +151,9 @@ Necesitaremos utilizar este rever para un commit echo por Damian en este determi
 
 
 Hacer un merge significa combinar los cambios de una rama en otra. Esto es útil para integrar características o correcciones de errores.
+
+
+#### En caso de querer realizarlo por consola
 
 
 ### Pasos para Hacer un Merge
@@ -182,6 +186,18 @@ Supongamos que tienes un commit con el hash `abc123` que deseas revertir y una r
 3. **Resolver Conflictos (si es necesario)**: Si hay conflictos, edita los archivos con conflictos, agrega los cambios y completa el merge.
 
 
+#### En caso de querer realizarlo por intuicion
+
+
+![Merge](mergebdintomain.png)
+
+    - Igual que realizamos este merge con la rama de bd en main lo haremos con la rama de interface 
+
+
+#### Confirmacion del merge
+
+
+![Confirmacion](mergedbdyinterfaceintomain.png)
 
 
 ---------

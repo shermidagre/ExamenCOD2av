@@ -207,6 +207,7 @@ Supongamos que tienes un commit con el hash `abc123` que deseas revertir y una r
 
 ![version](version.png)
 
+![version](nuevaversion.png)
 
 #### Mediante forma mas compleja
 

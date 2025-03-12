@@ -202,6 +202,14 @@ Supongamos que tienes un commit con el hash `abc123` que deseas revertir y una r
 
 ---------
 
+#### Mediante forma mas facil e intuitiva
+
+
+![version](version.png)
+
+
+#### Mediante forma mas compleja
+
 ## Lanzamiento de la Versión 1.0
 
 

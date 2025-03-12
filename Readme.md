@@ -63,11 +63,7 @@ Descripción breve del proyecto. Explica qué hace, su propósito y a quién est
 ## Instalación
 
 
-
-
 Instrucciones sobre cómo instalar y configurar el proyecto.
-
-
 
 
 ## Uso
@@ -78,10 +74,7 @@ Instrucciones sobre cómo instalar y configurar el proyecto.
 Instrucciones sobre cómo usar el proyecto. Incluye ejemplos si es posible.
 
 
-
-
 1. Ejecuta el proyecto con el comando correspondiente
-
 
 
 
@@ -108,8 +101,90 @@ npm install  # o el comando correspondiente para tu proyecto
 
 ```
 
+---------
 
 
+# Guía de Git: Revertir un Commit y Hacer un Merge
+
+
+Este documento proporciona instrucciones sobre cómo revertir un commit y cómo hacer un merge de una rama a otra en Git. Estas son operaciones comunes que pueden ser útiles en el flujo de trabajo de desarrollo.
+
+
+## Tabla de Contenidos
+
+
+- [Revertir un Commit](#revertir-un-commit)
+
+- [Hacer un Merge de una Rama a Otra](#hacer-un-merge-de-una-rama-a-otra)
+
+- [Ejemplo Completo](#ejemplo-completo)
+
+
+## Revertir un Commit en la rama interface
+
+
+Revertir un commit significa deshacer los cambios introducidos por ese commit, creando un nuevo commit que revierte esos cambios.
+
+Necesitaremos utilizar este rever para un commit echo por Damian en este determinado proyecto
+
+
+### Pasos para Revertir un Commit
+
+#### En caso de querer realizarlo por consola
+
+1. **Identificar el Commit**: Usa el comando `git log` para ver el historial de commits y encontrar el hash del commit que deseas revertir. Busca el hash del commit (una cadena larga de caracteres) que deseas revertir.
+
+
+2. **Revertir el Commit**: Ejecuta el comando `git revert COMMIT_HASH`, reemplazando `COMMIT_HASH` con el hash del commit que deseas revertir. Esto abrirá tu editor de texto para que puedas escribir un mensaje de commit. Guarda y cierra el editor para completar el revert.
+
+
+3. **Confirmar el Revert**: Verifica que el commit ha sido revertido correctamente usando el comando `git log`.
+
+#### En caso de querer realizarlo por intuicion
+
+
+![Commit revertido](revert%20commit.png)
+
+
+## Hacer un Merge de una Rama a Otra
+
+
+Hacer un merge significa combinar los cambios de una rama en otra. Esto es útil para integrar características o correcciones de errores.
+
+
+### Pasos para Hacer un Merge
+
+
+1. **Cambiar a la Rama de Destino**: Primero, asegúrate de estar en la rama a la que deseas hacer el merge. Por ejemplo, si deseas hacer merge en la rama `main`, usa el comando `git checkout main`.
+
+
+2. **Hacer el Merge**: Ejecuta el comando `git merge NOMBRE_DE_LA_RAMA`, reemplazando `NOMBRE_DE_LA_RAMA` con el nombre de la rama que deseas fusionar.
+
+
+3. **Resolver Conflictos (si es necesario)**: Si hay conflictos durante el merge, Git te lo indicará. Deberás resolver los conflictos manualmente en los archivos afectados. Después de resolver los conflictos, agrega los cambios usando `git add .` y completa el merge con `git commit`.
+
+
+4. **Verificar el Merge**: Asegúrate de que el merge se haya realizado correctamente revisando el historial de commits con el comando `git log`.
+
+
+## Ejemplo Completo
+
+
+Supongamos que tienes un commit con el hash `abc123` que deseas revertir y una rama llamada `feature` que deseas fusionar en `main`.
+
+
+1. **Revertir el Commit**: Usa `git log` para encontrar el hash del commit y luego ejecuta `git revert abc123`.
+
+
+2. **Hacer Merge de la Rama `feature` en `main`**: Cambia a la rama `main` usando `git checkout main` y luego ejecuta `git merge feature`.
+
+
+3. **Resolver Conflictos (si es necesario)**: Si hay conflictos, edita los archivos con conflictos, agrega los cambios y completa el merge.
+
+
+
+
+---------
 
 ## Lanzamiento de la Versión 1.0
 
